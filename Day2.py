@@ -99,6 +99,7 @@ in_put = [1,0,0,3,1,1,2,3,1,3,4,3,1,5,0,3,2,9,1,19,1,19,5,23,1,23,6,27,2,9,27,31
 def intcode(intlist, noun=12, verb=2):
     intlist[1] = noun
     intlist[2] = verb
+    print(f'Input = {100*noun+verb}')
     for spot, each in enumerate(intlist):
         if spot%4 == 0:
             if each == 1:

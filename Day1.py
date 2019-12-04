@@ -115,7 +115,6 @@ def fueling(weights):
         while fuel_weight > 0:
             fuel_calc = math.floor(fuel_weight / 3) - 2
             # print(f'Weight: {fuel_weight} :: Calc: {fuel_calc}') ## debug print
-
             if fuel_calc > 0:
                 fuel_weight = fuel_calc
                 tot_fuel += fuel_calc
