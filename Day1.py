@@ -120,6 +120,6 @@ def fueling(weights):
                 tot_fuel += fuel_calc
             else:
                 fuel_weight = 0
-    print(tot_fuel)
+    print(f'Total Fuel Needed (after added weight from fuel): {tot_fuel}')
 
 fueling(module_fuel)
