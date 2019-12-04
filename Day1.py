@@ -101,24 +101,24 @@ nums = """109067
 97084
 56928"""
 
-def fueling():
-    module_fuel = nums.split("\n")
+module_fuel = nums.split("\n")
+
+def fueling(weights):
     tot_fuel = 0
-    for each in module_fuel:
+    for each in weights:
         x = int(each)
         math_stuff = math.floor(x / 3) - 2
         tot_fuel += math_stuff
         fuel_weight = math_stuff
         while fuel_weight > 0:
             fuel_calc = math.floor(fuel_weight / 3) - 2
-            print(f'Weight: {fuel_weight} :: Calc: {fuel_calc}')
+            # print(f'Weight: {fuel_weight} :: Calc: {fuel_calc}') ## debug print
             if fuel_calc > 0:
                 fuel_weight = fuel_calc
                 tot_fuel += fuel_calc
             else:
-                print(f'Fuel needed after fueling: {tot_fuel}.')
                 fuel_weight = 0
     print(f'Fuel needed: {tot_fuel}.')
 
 
-fueling()
+fueling(module_fuel)
