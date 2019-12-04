@@ -109,6 +109,8 @@ def fueling():
         math_stuff = math.floor(x / 3) - 2
         tot_fuel += math_stuff
         fuel_weight = math_stuff
+        # The above'll getcha the first answer (how much fuel for weight, not counting additional fuel) 
+        # -- below for the second (how much once fuel is added to the weight).
         while fuel_weight > 0:
             fuel_calc = math.floor(fuel_weight / 3) - 2
             print(f'Weight: {fuel_weight} :: Calc: {fuel_calc}')
