@@ -120,5 +120,6 @@ def fueling(weights):
                 tot_fuel += fuel_calc
             else:
                 fuel_weight = 0
+    print(tot_fuel)
 
 fueling(module_fuel)
