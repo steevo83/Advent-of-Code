@@ -110,15 +110,24 @@ def fueling(weights):
         math_stuff = math.floor(x / 3) - 2
         tot_fuel += math_stuff
         fuel_weight = math_stuff
+        # The above'll getcha the first answer (how much fuel for weight, not counting additional fuel) 
+        # -- below for the second (how much once fuel is added to the weight).
         while fuel_weight > 0:
             fuel_calc = math.floor(fuel_weight / 3) - 2
+<<<<<<< HEAD:Day1.py
             # print(f'Weight: {fuel_weight} :: Calc: {fuel_calc}') ## debug print
+=======
+            # print(f'Weight: {fuel_weight} :: Calc: {fuel_calc}') ## my own little check
+>>>>>>> 2943e1a98450ff63b64eaa0879ba7231c2f6c33e:Day1-Exercise1.py
             if fuel_calc > 0:
                 fuel_weight = fuel_calc
                 tot_fuel += fuel_calc
             else:
                 fuel_weight = 0
-    print(f'Fuel needed: {tot_fuel}.')
 
+<<<<<<< HEAD:Day1.py
 
 fueling(module_fuel)
+=======
+fueling()
+>>>>>>> 2943e1a98450ff63b64eaa0879ba7231c2f6c33e:Day1-Exercise1.py
