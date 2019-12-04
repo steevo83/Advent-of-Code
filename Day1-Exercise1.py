@@ -120,7 +120,5 @@ def fueling():
             else:
                 print(f'Fuel needed after fueling: {tot_fuel}.')
                 fuel_weight = 0
-    print(f'Fuel needed: {tot_fuel}.')
-
 
 fueling()
