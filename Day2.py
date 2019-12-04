@@ -110,5 +110,6 @@ def intcode(intlist, noun=12, verb=2):
             else:
                 raise Exception("1, 2, or 99 are only acceptable opcodes.")
     print(intlist)
-
+# for the second challenge, I just kinda changed these numbers around until it worked 
+# -- really wasn't that hard, they change things very predictably, I'm sure there's a way more scientific way to get the answer.
 intcode(in_put, 77, 49)
