@@ -5,9 +5,9 @@ with open('Calibration document.txt') as f:
         for char in line:
             if char.isnumeric():
                 nums.append(char)
-        print(nums)
+        #print(nums)
         linetot = nums[0]+nums[-1]
-        print(linetot)
+        #print(linetot)
         alllines.append(linetot)
     allnums = [int(x) for x in alllines]
     alltot = sum(allnums)
